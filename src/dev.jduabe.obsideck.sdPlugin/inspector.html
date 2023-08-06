@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>dev.jduabe.obsideck Property Inspector</title>
+  <link rel="stylesheet" href="libs/css/sdpi.css" />
+</head>
+
+<body>
+  <form id="property-inspector">
+    <div class="sdpi-wrapper" id="mainWrapper">
+      <div class="sdpi-item">
+        <div class="sdpi-item-label">URL</div>
+        <input class="sdpi-item-value" id="url" name="url" required value="" type="text"
+          placeholder="fully qualified url e.g. http://127.0.0.1:27123" />
+      </div>
+
+      <div class="sdpi-item">
+        <div class="sdpi-item-label">API Key</div>
+        <input class="sdpi-item-value" id="apiKey" name="apiKey" required value="" type="password" />
+      </div>
+
+      <div class="sdpi-item">
+        <div class="sdpi-item-label">Command ID</div>
+        <input class="sdpi-item-value" id="commandId" name="commandId" required value="" type="text" />
+      </div>
+    </div>
+  </form>
+
+  <!-- Stream Deck Libs -->
+  <script src="libs/js/constants.js"></script>
+  <script src="libs/js/prototypes.js"></script>
+  <script src="libs/js/timers.js"></script>
+  <script src="libs/js/utils.js"></script>
+  <script src="libs/js/events.js"></script>
+  <script src="libs/js/api.js"></script>
+  <script src="libs/js/property-inspector.js"></script>
+  <script src="libs/js/dynamic-styles.js"></script>
+
+  <!-- Property Inspector Source -->
+  <script src="inspector.js"></script>
+</body>
+
+</html>

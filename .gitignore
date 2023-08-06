@@ -1,0 +1,9 @@
+.DS_Store
+.idea/**
+/src/DistributionTool
+dev.jduabe.obsideck
+.vscode/**
+package.json
+.history
+__exclude
+.editorconfig
