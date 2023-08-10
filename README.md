@@ -11,10 +11,10 @@
 
 A Stream Deck plugin that runs commands in Obsidian (via the Local REST API plugin).
 
-## Getting Started
+## Installation
 
 1. Install the [Local REST API plugin](https://github.com/coddingtonbear/obsidian-local-rest-api) for Obsidian.  
-2. Download and install this plugin from the [Release](./Release) directory.
+2. Install this plugin from the [Stream Deck store](https://apps.elgato.com/plugins/dev.jduabe.obsideck) or from [releases](https://github.com/j4ckofalltrades/obsideck/releases).
 
 ## Configuration
 
@@ -48,3 +48,4 @@ curl -X 'GET' \
   ]
 }
 ```
+
