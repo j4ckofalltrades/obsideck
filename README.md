@@ -20,7 +20,7 @@ or download directly from [releases](https://github.com/j4ckofalltrades/obsideck
 
 ## Configuration
 
-In order to interact with Obsidian through the local REST API, the plugin needs the **(1)** API Key and the **(2)** URL.
+In order to interact with Obsidian through the Local REST API, the plugin needs the **(1)** API Key and the **(2)** URL.
 
 These configuration items can be found in the Local REST API plugin settings.
 
@@ -31,7 +31,7 @@ server by toggling the `Enable Non-Encrypted (HTTP) server` option.
 
 Depending on the your desired configuration (using HTTPS or HTTP, custom ports), the full URL should look like:
 
-`${scheme}://127.0.0.1/${port}`
+`${scheme}://localhost/${port}`
 
 where *scheme* is either `http` or `https` and *port* is the corresponding port
 relative to the selected scheme.
@@ -55,7 +55,7 @@ Sample call to the commands endpoint using `curl`:
 
 ```bash
   curl -X 'GET' \
-    'http://127.0.0.1:27123/commands/' \
+    'http://localhost:27123/commands/' \
     -H 'Accept: application/json' \
     -H 'Authorization: Bearer api_key_goes_here'
 
