@@ -34,7 +34,7 @@
 			],
 			"Tooltip": "Run a command in Obsidian",
 			"UUID": "dev.jduabe.obsideck.runcommand",
-			"PropertyInspectorPath": "pi/inspector.html"
+			"PropertyInspectorPath": "runcommand.html"
 		},
 		{
 			"Icon": "assets/action",
@@ -47,7 +47,7 @@
 			],
 			"Tooltip": "Open a specified document in Obsidian",
 			"UUID": "dev.jduabe.obsideck.openfile",
-			"PropertyInspectorPath": "pi/inspector.html"
+			"PropertyInspectorPath": "openfile.html"
 		}
 	]
 }

@@ -1,23 +1,23 @@
-/// <reference path="../libs/js/action.js" />
-/// <reference path="../libs/js/stream-deck.js" />
+/// <reference path="libs/js/action.js" />
+/// <reference path="libs/js/stream-deck.js" />
 
 var settings = {};
-var openFileAction = new Action("dev.jduabe.obsideck.openfile");
+var runCommandAction = new Action("dev.jduabe.obsideck.runcommand");
 
-openFileAction.onWillAppear((event) => {
+runCommandAction.onWillAppear((event) => {
 	$SD.getSettings(event.context);
 });
 
-openFileAction.onDidReceiveSettings(({ payload }) => {
+runCommandAction.onDidReceiveSettings(({ payload }) => {
 	settings = payload.settings;
 });
 
-openFileAction.onKeyUp(({ context }) => {
+runCommandAction.onKeyUp(({ context }) => {
 	const apiKey = settings.apiKey;
+	const commandId = settings.commandId;
 	const url = settings.url;
-	const filePath = settings.filePath;
 
-	fetch(`${url}/open/${encodeURIComponent(filePath)}/`, {
+	fetch(`${url}/commands/${encodeURIComponent(commandId)}/`, {
 		method: "POST",
 		headers: {
 			"Accept": "*/*",

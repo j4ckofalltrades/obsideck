@@ -14,6 +14,12 @@
 <body>
   <form id="property-inspector">
     <div class="sdpi-wrapper" id="mainWrapper">
+      <div class="sdpi-more-info-button">
+        <button type="button" onclick="window.open('https://github.com/j4ckofalltrades/obsideck#open-file-action')">
+          Configuration Guide
+        </button>
+      </div>
+
       <div class="sdpi-item">
         <div class="sdpi-item-label">URL</div>
         <input class="sdpi-item-value" id="url" name="url" required value="" type="text"
@@ -26,8 +32,9 @@
       </div>
 
       <div class="sdpi-item">
-        <div class="sdpi-item-label">Command ID</div>
-        <input class="sdpi-item-value" id="commandId" name="commandId" required value="" type="text" />
+        <div class="sdpi-item-label">File Path</div>
+        <input class="sdpi-item-value" id="filePath" name="filePath" required value="" type="text"
+          placeholder="path to the file (relative to vault root)" />
       </div>
     </div>
   </form>

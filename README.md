@@ -664,6 +664,8 @@ The `Open File` action has the following **required** config items:
 - URL 
 - File Path
 
+![](assets/open-file.png)
+
 The [configuration](#configuration) section details how to retrieve the `API Key` and `URL` config items.
 
 A couple of things to note regarding `File Path`, the first is that it is relative to the current vault root and the
