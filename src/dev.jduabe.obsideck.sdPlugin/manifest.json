@@ -6,7 +6,7 @@
 	"Name": "Obsideck",
 	"Icon": "assets/plugin",
 	"URL": "https://github.com/j4ckofalltrades/obsideck",
-	"Version": "1.0.0",
+	"Version": "1.1.0",
 	"Software": {
 		"MinimumVersion": "5.0"
 	},
@@ -34,7 +34,20 @@
 			],
 			"Tooltip": "Run a command in Obsidian",
 			"UUID": "dev.jduabe.obsideck.runcommand",
-			"PropertyInspectorPath": "inspector.html"
+			"PropertyInspectorPath": "pi/inspector.html"
+		},
+		{
+			"Icon": "assets/action",
+			"Name": "Open File",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "assets/key"
+				}
+			],
+			"Tooltip": "Open a specified document in Obsidian",
+			"UUID": "dev.jduabe.obsideck.openfile",
+			"PropertyInspectorPath": "pi/inspector.html"
 		}
 	]
 }

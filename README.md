@@ -655,3 +655,27 @@ Commands from (external) installed plugins can be obtained by calling the comman
   }
   ```
 </details>
+
+## Open File action
+
+The `Open File` action has the following **required** config items:
+
+- API Key
+- URL 
+- File Path
+
+The [configuration](#configuration) section details how to retrieve the `API Key` and `URL` config items.
+
+A couple of things to note regarding `File Path`, the first is that it is relative to the current vault root and the
+other is that the forward slash character (/) must be used as the file separator.
+
+Consider the following example where **notes** is the name of the current vault.
+
+```bash
+notes/
+├── 1.md
+└── dir
+    └── 2.md
+```
+
+The file path for the first file will be `1.md` while the path for the other file will be `dir/2.md`.
