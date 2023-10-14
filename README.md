@@ -1,21 +1,18 @@
-<div align="center">
-  <br/>
-  <a href="https://github.com/j4ckofalltrades/obsideck">
-    <img height="128" src="src/dev.jduabe.obsideck.sdPlugin/assets/plugin.png" alt="Logo">
-  </a>
-</div>
+![Obsideck social preview image](https://res.cloudinary.com/j4ckofalltrades/image/upload/v1697278937/foss/gh-social-icons/obsideck_xuow53.png)
 
-<br/>
+## Demo
 
-# Obsideck
+View the plugin in action by clicking on the video below:
 
-A Stream Deck plugin that runs commands in [Obsidian](https://obsidian.md) (via the
-[Local REST API plugin](https://obsidian.md/plugins?id=obsidian-local-rest-api)).
+[![Obsideck Demo](https://img.youtube.com/vi/O2DaEObDIYA/maxresdefault.jpg)](https://www.youtube.com/watch?v=O2DaEObDIYA)
 
 ## Installation
 
+> [!IMPORTANT]
+> If your version of the Stream Deck software is < 6.4, you can download the plugin from the [Stream Deck App Store](https://apps.elgato.com/plugins/dev.jduabe.obsideck).
+
 1. Install the [Local REST API plugin](https://obsidian.md/plugins?id=obsidian-local-rest-api) for Obsidian.  
-2. Install this plugin from the [Stream Deck App Store](https://apps.elgato.com/plugins/dev.jduabe.obsideck)
+2. Install this plugin from the [Elgato Marketplace](https://marketplace.elgato.com/product/obsideck-53fb4b45-65f6-496e-923f-8e58388e3c17)
 or download directly from [releases](https://github.com/j4ckofalltrades/obsideck/releases).
 
 ## Configuration
@@ -29,7 +26,7 @@ These configuration items can be found in the Local REST API plugin settings.
 The plugin will use HTTPS by default and provides a self-signed certificate. Alternatively, you can enable a HTTP
 server by toggling the `Enable Non-Encrypted (HTTP) server` option.
 
-Depending on the your desired configuration (using HTTPS or HTTP, custom ports), the full URL should look like:
+Depending on your desired configuration (using HTTPS or HTTP, custom ports), the full URL should look like:
 
 `${scheme}://localhost/${port}`
 
@@ -74,7 +71,7 @@ Sample call to the commands endpoint using `curl`:
 ### Standard commands
 
 For ease of use, the following section lists all the available commands for a vanilla Obsidian installation.
-Commands from (external) installed plugins can be obtained by calling the commands endpoint.
+Commands from other (community) plugins can be obtained by calling the commands endpoint.
 
 <details>
 
