@@ -1,53 +1,53 @@
 {
-	"SDKVersion": 2,
-	"Author": "Jordan Duabe",
-	"CodePath": "app.html",
-	"Description": "Run commands on Obsidian with your Stream Deck",
-	"Name": "Obsideck",
-	"Icon": "assets/plugin",
-	"URL": "https://github.com/j4ckofalltrades/obsideck",
-	"Version": "1.1.0",
-	"Software": {
-		"MinimumVersion": "5.0"
-	},
-	"OS": [
-		{
-			"Platform": "mac",
-			"MinimumVersion": "10.11"
-		},
-		{
-			"Platform": "windows",
-			"MinimumVersion": "10"
-		}
-	],
-	"Category": "Obsidian",
-	"CategoryIcon": "assets/category",
-	"Actions": [
-		{
-			"Icon": "assets/action",
-			"Name": "Run Command",
-			"Controllers": ["Keypad"],
-			"States": [
-				{
-					"Image": "assets/key"
-				}
-			],
-			"Tooltip": "Run a command in Obsidian",
-			"UUID": "dev.jduabe.obsideck.runcommand",
-			"PropertyInspectorPath": "runcommand.html"
-		},
-		{
-			"Icon": "assets/action",
-			"Name": "Open File",
-			"Controllers": ["Keypad"],
-			"States": [
-				{
-					"Image": "assets/key"
-				}
-			],
-			"Tooltip": "Open a specified document in Obsidian",
-			"UUID": "dev.jduabe.obsideck.openfile",
-			"PropertyInspectorPath": "openfile.html"
-		}
-	]
+  "SDKVersion": 2,
+  "Author": "Jordan Duabe",
+  "CodePath": "app.html",
+  "Description": "Run commands on Obsidian with your Stream Deck",
+  "Name": "Obsideck",
+  "Icon": "assets/plugin",
+  "URL": "https://github.com/j4ckofalltrades/obsideck",
+  "Version": "1.1.0",
+  "Software": {
+    "MinimumVersion": "5.0"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Category": "Obsidian",
+  "CategoryIcon": "assets/category",
+  "Actions": [
+    {
+      "Icon": "assets/action",
+      "Name": "Run Command",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "assets/key"
+        }
+      ],
+      "Tooltip": "Run a command in Obsidian",
+      "UUID": "dev.jduabe.obsideck.runcommand",
+      "PropertyInspectorPath": "runcommand.html"
+    },
+    {
+      "Icon": "assets/action",
+      "Name": "Open File",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "assets/key"
+        }
+      ],
+      "Tooltip": "Open a specified document in Obsidian",
+      "UUID": "dev.jduabe.obsideck.openfile",
+      "PropertyInspectorPath": "openfile.html"
+    }
+  ]
 }

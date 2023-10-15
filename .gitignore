@@ -1,9 +1,6 @@
 .DS_Store
+.eslintcache
 .idea/**
-/src/DistributionTool
-dev.jduabe.obsideck
 .vscode/**
-package.json
-.history
-__exclude
-.editorconfig
+node_modules/
+dev.jduabe.obsideck

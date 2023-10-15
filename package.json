@@ -1,0 +1,65 @@
+{
+  "name": "obsideck",
+  "version": "1.1.0",
+  "description": "A Stream Deck plugin that runs commands in Obsidian",
+  "scripts": {
+    "lint": "eslint --cache src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jordan Duabe @j4ckofalltrades <me@jduabe.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2017
+    },
+    "ignorePatterns": ["**/libs/*"],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix src"
+    ],
+    "*.{html,css,js}": [
+      "prettier --write src"
+    ]
+  }
+}
