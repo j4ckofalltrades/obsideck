@@ -2,21 +2,12 @@
 /// <reference path="libs/js/stream-deck.js" />
 
 /* eslint-disable no-undef */
-let settings = {}
 let runCommandAction = new Action("dev.jduabe.obsideck.runcommand")
 
-runCommandAction.onWillAppear((event) => {
-  $SD.getSettings(event.context)
-})
-
-runCommandAction.onDidReceiveSettings(({ payload }) => {
-  settings = payload.settings
-})
-
-runCommandAction.onKeyUp(({ context }) => {
-  const apiKey = settings.apiKey
-  const commandId = settings.commandId
-  const url = settings.url
+runCommandAction.onKeyUp(({ context, payload }) => {
+  const apiKey = payload.settings.apiKey
+  const commandId = payload.settings.commandId
+  const url = payload.settings.url
 
   fetch(`${url}/commands/${encodeURIComponent(commandId)}/`, {
     method: "POST",
