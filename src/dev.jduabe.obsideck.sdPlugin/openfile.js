@@ -2,21 +2,12 @@
 /// <reference path="libs/js/stream-deck.js" />
 
 /* eslint-disable no-undef */
-let openFileSettings = {}
 let openFileAction = new Action("dev.jduabe.obsideck.openfile")
 
-openFileAction.onWillAppear((event) => {
-  $SD.getSettings(event.context)
-})
-
-openFileAction.onDidReceiveSettings(({ payload }) => {
-  openFileSettings = payload.settings
-})
-
-openFileAction.onKeyUp(({ context }) => {
-  const apiKey = openFileSettings.apiKey
-  const url = openFileSettings.url
-  const filePath = openFileSettings.filePath
+openFileAction.onKeyUp(({ context, payload }) => {
+  const apiKey = payload.settings.apiKey
+  const url = payload.settings.url
+  const filePath = payload.settings.filePath
 
   fetch(`${url}/open/${filePath}?newLeaf=true`, {
     method: "POST",
