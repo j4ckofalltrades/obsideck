@@ -8,9 +8,6 @@ View the plugin in action by clicking on the video below:
 
 ## Installation
 
-> [!IMPORTANT]
-> If your version of the Stream Deck software is < 6.4, you can download the plugin from the [Stream Deck App Store](https://apps.elgato.com/plugins/dev.jduabe.obsideck).
-
 1. Install the [Local REST API plugin](https://obsidian.md/plugins?id=obsidian-local-rest-api) for Obsidian.  
 2. Install this plugin from the [Elgato Marketplace](https://marketplace.elgato.com/product/obsideck-53fb4b45-65f6-496e-923f-8e58388e3c17)
 or download directly from [releases](https://github.com/j4ckofalltrades/obsideck/releases).
