@@ -1,6 +1,7 @@
 ![Obsideck social preview image](https://res.cloudinary.com/j4ckofalltrades/image/upload/v1697278937/foss/gh-social-icons/obsideck_xuow53.png)
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/j4ckofalltrades/obsideck)
+![License](https://img.shields.io/github/license/j4ckofalltrades/obsideck)
 
 A Stream Deck plugin that runs commands in Obsidian.
 
