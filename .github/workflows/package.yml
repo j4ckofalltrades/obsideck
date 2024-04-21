@@ -1,0 +1,19 @@
+name: Package
+
+on:
+  push:
+    tags:
+      - 'v.*.*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package StreamDeck plugin
+        uses: j4ckofalltrades/streamdeck-package@v0.0.1
+        with:
+          input-directory: "src/dev.jduabe.obsideck.sdPlugin"
+          output-directory: "release"
