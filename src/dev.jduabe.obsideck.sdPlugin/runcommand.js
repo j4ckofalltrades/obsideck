@@ -1,7 +1,7 @@
 /// <reference path="libs/js/action.js" />
 /// <reference path="libs/js/stream-deck.js" />
 
-/* eslint-disable no-undef */
+ 
 let runCommandAction = new Action("dev.jduabe.obsideck.runcommand")
 
 runCommandAction.onKeyUp(({ context, payload }) => {
