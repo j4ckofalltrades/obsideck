@@ -23,14 +23,12 @@ In order to interact with Obsidian through the Local REST API, the plugin needs 
 
 These configuration items can be found in the Local REST API plugin settings.
 
-![](assets/local-rest-api-config.png)
-
-The plugin will use HTTPS by default and provides a self-signed certificate. Alternatively, you can enable a HTTP
+The plugin will use HTTPS by default and provides a self-signed certificate. Alternatively, you can enable an HTTP
 server by toggling the `Enable Non-Encrypted (HTTP) server` option.
 
 Depending on your desired configuration (using HTTPS or HTTP, custom ports), the full URL should look like:
 
-`${scheme}://localhost/${port}`
+`${scheme}://localhost:${port}`
 
 where *scheme* is either `http` or `https` and *port* is the corresponding port
 relative to the selected scheme.
@@ -43,7 +41,7 @@ The `Run Command` action has the following **required** config items:
 - URL 
 - Command ID
 
-![](assets/run-command.png)
+![Obsideck run command action](assets/run-command.png)
 
 The [configuration](#configuration) section details how to retrieve the `API Key` and `URL` config items.
 
@@ -663,7 +661,7 @@ The `Open File` action has the following **required** config items:
 - URL 
 - File Path
 
-![](assets/open-file.png)
+![Obsideck open file action](assets/open-file.png)
 
 The [configuration](#configuration) section details how to retrieve the `API Key` and `URL` config items.
 
