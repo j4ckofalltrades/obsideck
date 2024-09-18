@@ -48,25 +48,34 @@ The [configuration](#configuration) section details how to retrieve the `API Key
 The `Command ID` can be obtained by calling the `/commands` endpoint of the Local REST API, through the
 command line or the [Local REST API playground](https://coddingtonbear.github.io/obsidian-local-rest-api).
 
-Sample call to the commands endpoint using `curl`:
+Sample call to the commands endpoint using `curl`, if you're running MacOS:
 
 ```bash
-  curl -X 'GET' \
-    'http://localhost:27123/commands/' \
-    -H 'Accept: application/json' \
-    -H 'Authorization: Bearer api_key_goes_here'
+curl -X 'GET' \
+  'http://127.0.0.1:27123/commands/' \
+  -H 'Accept: application/json' \
+  -H 'Authorization: Bearer api_key_goes_here'
 
-  # Sample response
-  {
-    "commands": [
-      {
-        "id": "app:open-help",
-        "name": "Open Help"
-      },
-      ...
-    ]
-  }
-  ```
+# Sample response
+{
+  "commands": [
+    {
+      "id": "app:open-help",
+      "name": "Open Help"
+    },
+    ...
+  ]
+}
+```
+
+If you're running Windows, run the following command:
+
+```powershell
+curl -X "GET" ^
+  "http://127.0.0.1:27123/commands/" ^
+  -H "accept: application/json" ^
+  -H "Authorization: Bearer api_key_goes_here"
+```
 
 ### Standard commands
 
