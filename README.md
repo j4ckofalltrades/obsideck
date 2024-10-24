@@ -38,7 +38,7 @@ relative to the selected scheme.
 The `Run Command` action has the following **required** config items:
 
 - API Key
-- URL 
+- URL
 - Command ID
 
 ![Obsideck run command action](assets/run-command.png)
@@ -667,7 +667,7 @@ Commands from other (community) plugins can be obtained by calling the commands 
 The `Open File` action has the following **required** config items:
 
 - API Key
-- URL 
+- URL
 - File Path
 
 ![Obsideck open file action](assets/open-file.png)

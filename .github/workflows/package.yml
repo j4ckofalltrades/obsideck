@@ -10,9 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo and submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Package Stream Deck plugin
-        uses: j4ckofalltrades/streamdeck-package@v0.0.1
+        uses: j4ckofalltrades/streamdeck-package@v0.1.0
         with:
           input-directory: "src/dev.jduabe.obsideck.sdPlugin"
           output-directory: "release"

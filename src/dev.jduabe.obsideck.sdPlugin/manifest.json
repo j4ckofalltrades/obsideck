@@ -6,7 +6,7 @@
   "Name": "Obsideck",
   "Icon": "assets/plugin",
   "URL": "https://github.com/j4ckofalltrades/obsideck",
-  "Version": "1.1.3.0",
+  "Version": "1.1.4.0",
   "UUID": "dev.jduabe.obsideck",
   "Software": {
     "MinimumVersion": "6.4"
