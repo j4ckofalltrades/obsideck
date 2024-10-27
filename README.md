@@ -1,6 +1,7 @@
 ![Obsideck social preview image](https://res.cloudinary.com/j4ckofalltrades/image/upload/v1697278937/foss/gh-social-icons/obsideck_xuow53.png)
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/j4ckofalltrades/obsideck)
+[![Elgato Marketplace](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmp-gateway.elgato.com%2Fproducts%3Fname%3DObsideck&logo=elgato&query=%24.results.*.download_count&label=Elgato%20Marketplace)](https://marketplace.elgato.com/product/obsideck-53fb4b45-65f6-496e-923f-8e58388e3c17)
 ![License](https://img.shields.io/github/license/j4ckofalltrades/obsideck)
 
 A Stream Deck plugin that runs commands in Obsidian.
