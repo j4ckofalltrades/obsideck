@@ -14,7 +14,7 @@ View the plugin in action by clicking on the video below:
 
 ## Installation
 
-1. Install the [Local REST API plugin](https://obsidian.md/plugins?id=obsidian-local-rest-api) for Obsidian.  
+1. Install the [Local REST API plugin](https://obsidian.md/plugins?id=obsidian-local-rest-api) for Obsidian.
 2. Install this plugin from the [Elgato Marketplace](https://marketplace.elgato.com/product/obsideck-53fb4b45-65f6-496e-923f-8e58388e3c17)
 or download directly from [releases](https://github.com/j4ckofalltrades/obsideck/releases).
 
@@ -688,3 +688,25 @@ notes/
 ```
 
 The file path for the first file will be `1.md` while the path for the other file will be `dir/2.md`.
+
+## Common Issues
+
+### Issues connecting to the Obsidian Local REST API endpoint via https
+
+Refer to this guide: [How do I get my browser trust my Obsidian Local REST API certificate?](https://github.com/coddingtonbear/obsidian-web/wiki/How-do-I-get-my-browser-trust-my-Obsidian-Local-REST-API-certificate%3F)
+
+### Debugging the plugin
+
+To help diagnose other issues that you may encounter.
+
+1. Enable the HTML remote debugger in your Stream Deck.
+
+- on macOS, run the following command from the terminal: `defaults write com.elgato.StreamDeck html_remote_debugging_enabled -bool YES`.
+
+- on Windows, add a DWORD `html_remote_debugging_enabled` with value `1` in the registry `@ HKEY_CURRENT_USER\Software\Elgato Systems GmbH\StreamDeck`.
+
+2. Restart the Stream Deck application.
+3. Navigate to http://localhost:23654/ on Chrome -- this will list all "inspectable" pages (plugins).
+4. Click on the `dev.jduabe.obsideck` entry on the list -- this will open up Developer console where you can inspect logs and network calls.
+5. Press the button (with the failing action) on the Stream Deck.
+6. Inspect the logs (and errors) from the Console and Network tab in the browser.
