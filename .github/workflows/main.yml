@@ -19,7 +19,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup Biome
-        uses: biomejs/setup-biome@1cbe33ead22c12f2c9abc88f6fc4b1c9218b3097 # v2.3.0
+        uses: biomejs/setup-biome@454fa0d884737805f48d7dc236c1761a0ac3cc13 # v2.6.0
 
       - name: Run Biome
         run: biome ci .
