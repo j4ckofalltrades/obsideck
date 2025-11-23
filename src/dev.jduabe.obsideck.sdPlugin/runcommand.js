@@ -5,7 +5,7 @@ let runCommandAction = new Action("dev.jduabe.obsideck.runcommand")
 
 runCommandAction.onKeyUp(({ context, payload }) => {
   const apiKey = payload.settings.apiKey
-  const url = payload.settings.url
+  const url = payload.settings.url ? payload.settings.url.replace(/\/+$/, "") : payload.settings.url
   const commandId = payload.settings.commandId
 
   fetch(`${url}/commands/${encodeURIComponent(commandId)}/`, {

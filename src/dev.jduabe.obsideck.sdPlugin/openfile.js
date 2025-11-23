@@ -5,7 +5,7 @@ let openFileAction = new Action("dev.jduabe.obsideck.openfile")
 
 openFileAction.onKeyUp(({ context, payload }) => {
   const apiKey = payload.settings.apiKey
-  const url = payload.settings.url
+  const url = payload.settings.url ? payload.settings.url.replace(/\/+$/, "") : payload.settings.url
   const filePath = payload.settings.filePath
 
   fetch(`${url}/open/${filePath}?newLeaf=true`, {
