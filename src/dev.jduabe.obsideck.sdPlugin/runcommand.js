@@ -1,7 +1,6 @@
 /// <reference path="libs/js/action.js" />
 /// <reference path="libs/js/stream-deck.js" />
 
- 
 let runCommandAction = new Action("dev.jduabe.obsideck.runcommand")
 
 runCommandAction.onKeyUp(({ context, payload }) => {
@@ -13,7 +12,7 @@ runCommandAction.onKeyUp(({ context, payload }) => {
     method: "POST",
     headers: {
       Accept: "*/*",
-      Authorization: "Bearer " + apiKey,
+      Authorization: `Bearer ${apiKey}`,
     },
   })
     .then((response) => {

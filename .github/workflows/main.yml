@@ -1,29 +1,25 @@
-name: Lint
+name: Code Quality
 
 on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
 
 jobs:
-  build:
+  quality:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
-          node-version: '20.x'
+          persist-credentials: false
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
-          run_install: false
+      - name: Setup Biome
+        uses: biomejs/setup-biome@1cbe33ead22c12f2c9abc88f6fc4b1c9218b3097 # v2.3.0
 
-      - name: Build
-        run: |
-          pnpm install --frozen-lockfile
-          pnpm run lint
+      - name: Run Biome
+        run: biome ci .
