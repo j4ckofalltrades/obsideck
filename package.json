@@ -14,8 +14,8 @@
   "author": "Jordan Duabe <me@jduabe.dev>",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "^2.3.7",
-    "@elgato/cli": "^1.5.1",
+    "@biomejs/biome": "^2.3.13",
+    "@elgato/cli": "^1.7.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7"
   },
