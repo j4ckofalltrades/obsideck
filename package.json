@@ -14,10 +14,15 @@
   "author": "Jordan Duabe <me@jduabe.dev>",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "^2.3.13",
-    "@elgato/cli": "^1.7.0",
+    "@biomejs/biome": "^2.4.3",
+    "@elgato/cli": "^1.7.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7"
+  },
+  "pnpm": {
+    "overrides": {
+      "tar": ">=7.5.8"
+    }
   },
   "lint-staged": {
     "*.{js,html,css}": [
